@@ -90,27 +90,33 @@ data format:
 
 
 def plot_graph(data):
+    font_size = 100
     # Create a figure and a set of subplots
-    fig, axs = plt.subplots(3, 1, figsize=(20, 30))
+    fig, axs = plt.subplots(3, 1, figsize=(40, 60))
 
     # Plot RSSI
     axs[0].bar(data['locationAbbreviation'], data['rssis'], color='b')
-    axs[0].set_title('RSSI')
-    axs[0].set_xlabel('Locations')
-    axs[0].set_ylabel('RSSI')
+    axs[0].set_title('RSSI', fontsize=font_size + 20)
+    axs[0].set_xlabel('Locations', fontsize=font_size)
+    axs[0].set_ylabel('RSSI', fontsize=font_size)
+    axs[0].tick_params(axis='x', labelsize=font_size - 20)
+    axs[0].tick_params(axis='y', labelsize=font_size - 20)
 
     # Plot SNR
     axs[1].bar(data['locationAbbreviation'], data['snrs'], color='r')
-    axs[1].set_title('SNR')
-    axs[1].set_xlabel('Locations')
-    axs[1].set_ylabel('SNR')
+    axs[1].set_title('SNR', fontsize=font_size + 20)
+    axs[1].set_xlabel('Locations', fontsize=font_size)
+    axs[1].set_ylabel('SNR', fontsize=font_size)
+    axs[1].tick_params(axis='x', labelsize=font_size - 20)
+    axs[1].tick_params(axis='y', labelsize=font_size - 20)
 
     # Plot Lost Packets
     axs[2].bar(data['locationAbbreviation'], data['lost_packets'], color='g')
-    axs[2].set_title('Lost Packets')
-    axs[2].set_xlabel('Locations')
-    axs[2].set_ylabel('Lost Packets')
-
+    axs[2].set_title('Lost Packets', fontsize=font_size + 20)
+    axs[2].set_xlabel('Locations', fontsize=font_size)
+    axs[2].set_ylabel('Lost Packets', fontsize=font_size)
+    axs[2].tick_params(axis='x', labelsize=font_size - 20)
+    axs[2].tick_params(axis='y', labelsize=font_size - 20)
     # Display the figure
     plt.tight_layout()
     plt.show()

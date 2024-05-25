@@ -1,0 +1,109 @@
+{
+    "end_device_ids": {
+        "device_id": "eui-70b3d57ed00626b8",
+        "application_ids": {
+            "application_id": "lora-test-ucl"
+        },
+        "dev_eui": "70B3D57ED00626B8",
+        "join_eui": "0000000000000000",
+        "dev_addr": "260B4C02"
+    },
+    "correlation_ids": [
+        "gs:uplink:01HY5Q91ER5AY4X7XVQW4VS73C"
+    ],
+    "received_at": "2024-05-18T11:27:00.772864669Z",
+    "uplink_message": {
+        "session_key_id": "AY+Lc/Bl3nDHQc27IhtDhA==",
+        "f_port": 2,
+        "f_cnt": 2,
+        "frm_payload": "AgRTl6MC",
+        "rx_metadata": [
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-station-001",
+                    "eui": "7076FF00560723B7"
+                },
+                "time": "2024-05-18T11:27:00.543Z",
+                "timestamp": 1644923684,
+                "rssi": -93,
+                "channel_rssi": -93,
+                "snr": 10.8,
+                "location": {
+                    "latitude": 50.66705192,
+                    "longitude": 4.62103822,
+                    "source": "SOURCE_REGISTRY"
+                },
+                "uplink_token": "CiQKIgoWbGxuLXdpcm5ldC1zdGF0aW9uLTAwMRIIcHb/AFYHI7cQpJaukAYaDAiEoaKyBhCV+JWOAiCgid7o770lKgwIhKGisgYQwIv2ggI=",
+                "channel_index": 5,
+                "gps_time": "2024-05-18T11:27:00.543Z",
+                "received_at": "2024-05-18T11:27:00.183870684Z"
+            },
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-istation-004",
+                    "eui": "7076FF0056050CFB"
+                },
+                "time": "2024-05-18T11:27:00.543Z",
+                "timestamp": 2080420948,
+                "rssi": -115,
+                "channel_rssi": -115,
+                "snr": 0.8,
+                "uplink_token": "CiUKIwoXbGxuLXdpcm5ldC1pc3RhdGlvbi0wMDQSCHB2/wBWBQz7ENToguAHGgwIhKGisgYQ44+vjwIgoNCBlsbKJSoMCIShorIGEMCL9oIC",
+                "channel_index": 5,
+                "gps_time": "2024-05-18T11:27:00.543Z",
+                "received_at": "2024-05-18T11:26:58.290849273Z"
+            },
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-istation-005",
+                    "eui": "7076FF00560509D9"
+                },
+                "time": "2024-05-18T11:27:00.543Z",
+                "timestamp": 2510074260,
+                "rssi": -92,
+                "channel_rssi": -92,
+                "snr": 10,
+                "uplink_token": "CiUKIwoXbGxuLXdpcm5ldC1pc3RhdGlvbi0wMDUSCHB2/wBWBQnZEJTj8qwJGgwIhKGisgYQiarfjwIgoNTW4IbXJSoMCIShorIGEMCL9oIC",
+                "channel_index": 5,
+                "gps_time": "2024-05-18T11:27:00.543Z",
+                "received_at": "2024-05-18T11:26:58.291940297Z"
+            }
+        ],
+        "settings": {
+            "data_rate": {
+                "lora": {
+                    "bandwidth": 125000,
+                    "spreading_factor": 7,
+                    "coding_rate": "4/5"
+                }
+            },
+            "frequency": "868100000",
+            "timestamp": 1644923684,
+            "time": "2024-05-18T11:27:00.543Z"
+        },
+        "received_at": "2024-05-18T11:27:00.569498211Z",
+        "confirmed": true,
+        "consumed_airtime": "0.051456s",
+        "locations": {
+            "user": {
+                "latitude": 50.669282253947635,
+                "longitude": 4.609887822765963,
+                "source": "SOURCE_REGISTRY"
+            }
+        },
+        "version_ids": {
+            "brand_id": "heltec",
+            "model_id": "wifi-lora-32-class-a-otaa",
+            "hardware_version": "_unknown_hw_version_",
+            "firmware_version": "1.0",
+            "band_id": "EU_863_870"
+        },
+        "network_ids": {
+            "net_id": "000013",
+            "ns_id": "EC656E0000000181",
+            "tenant_id": "ttn",
+            "cluster_id": "eu1",
+            "cluster_address": "eu1.cloud.thethings.network"
+        }
+    }
+}

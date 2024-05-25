@@ -1,0 +1,109 @@
+{
+    "end_device_ids": {
+        "device_id": "eui-70b3d57ed00626b8",
+        "application_ids": {
+            "application_id": "lora-test-ucl"
+        },
+        "dev_eui": "70B3D57ED00626B8",
+        "join_eui": "0000000000000000",
+        "dev_addr": "260B4C02"
+    },
+    "correlation_ids": [
+        "gs:uplink:01HY5QAW91QCX8TBM7ABAXJHKP"
+    ],
+    "received_at": "2024-05-18T11:28:01.012981764Z",
+    "uplink_message": {
+        "session_key_id": "AY+Lc/Bl3nDHQc27IhtDhA==",
+        "f_port": 2,
+        "f_cnt": 9,
+        "frm_payload": "CQRTl6MC",
+        "rx_metadata": [
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-istation-005",
+                    "eui": "7076FF00560509D9"
+                },
+                "time": "2024-05-18T11:28:00.778Z",
+                "timestamp": 2570308804,
+                "rssi": -96,
+                "channel_rssi": -96,
+                "snr": 9.2,
+                "uplink_token": "CiUKIwoXbGxuLXdpcm5ldC1pc3RhdGlvbi0wMDUSCHB2/wBWBQnZEMSZz8kJGgwIwKGisgYQ9Y72/QIgoLvfkufYJSoMCMChorIGEICt/fIC",
+                "channel_index": 6,
+                "gps_time": "2024-05-18T11:28:00.778Z",
+                "received_at": "2024-05-18T11:27:58.526927276Z"
+            },
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-station-001",
+                    "eui": "7076FF00560723B7"
+                },
+                "time": "2024-05-18T11:28:00.778Z",
+                "timestamp": 1705158252,
+                "rssi": -92,
+                "channel_rssi": -92,
+                "snr": 8.2,
+                "location": {
+                    "latitude": 50.66705192,
+                    "longitude": 4.62103822,
+                    "source": "SOURCE_REGISTRY"
+                },
+                "uplink_token": "CiQKIgoWbGxuLXdpcm5ldC1zdGF0aW9uLTAwMRIIcHb/AFYHI7cQ7MyKrQYaDAjAoaKyBhDY9O79AiDgq+ia0L8lKgwIwKGisgYQgK398gI=",
+                "channel_index": 6,
+                "gps_time": "2024-05-18T11:28:00.778Z",
+                "received_at": "2024-05-18T11:28:00.418739240Z"
+            },
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-istation-004",
+                    "eui": "7076FF0056050CFB"
+                },
+                "time": "2024-05-18T11:28:00.778Z",
+                "timestamp": 2140655484,
+                "rssi": -116,
+                "channel_rssi": -116,
+                "snr": -4.5,
+                "uplink_token": "CiUKIwoXbGxuLXdpcm5ldC1pc3RhdGlvbi0wMDQSCHB2/wBWBQz7EPye3/wHGgwIwKGisgYQmM2UhwMg4PiJyKbMJSoMCMChorIGEICt/fIC",
+                "channel_index": 6,
+                "gps_time": "2024-05-18T11:28:00.778Z",
+                "received_at": "2024-05-18T11:27:58.541926305Z"
+            }
+        ],
+        "settings": {
+            "data_rate": {
+                "lora": {
+                    "bandwidth": 125000,
+                    "spreading_factor": 7,
+                    "coding_rate": "4/5"
+                }
+            },
+            "frequency": "868300000",
+            "timestamp": 2570308804,
+            "time": "2024-05-18T11:28:00.778Z"
+        },
+        "received_at": "2024-05-18T11:28:00.802328273Z",
+        "confirmed": true,
+        "consumed_airtime": "0.051456s",
+        "locations": {
+            "user": {
+                "latitude": 50.669282253947635,
+                "longitude": 4.609887822765963,
+                "source": "SOURCE_REGISTRY"
+            }
+        },
+        "version_ids": {
+            "brand_id": "heltec",
+            "model_id": "wifi-lora-32-class-a-otaa",
+            "hardware_version": "_unknown_hw_version_",
+            "firmware_version": "1.0",
+            "band_id": "EU_863_870"
+        },
+        "network_ids": {
+            "net_id": "000013",
+            "ns_id": "EC656E0000000181",
+            "tenant_id": "ttn",
+            "cluster_id": "eu1",
+            "cluster_address": "eu1.cloud.thethings.network"
+        }
+    }
+}

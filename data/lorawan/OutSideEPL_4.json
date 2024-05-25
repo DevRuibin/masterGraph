@@ -1,0 +1,124 @@
+{
+    "end_device_ids": {
+        "device_id": "eui-70b3d57ed00626b8",
+        "application_ids": {
+            "application_id": "lora-test-ucl"
+        },
+        "dev_eui": "70B3D57ED00626B8",
+        "join_eui": "0000000000000000",
+        "dev_addr": "260B4C02"
+    },
+    "correlation_ids": [
+        "gs:uplink:01HY5Q9H44MWSWG3BKH2RD085V"
+    ],
+    "received_at": "2024-05-18T11:27:16.821489177Z",
+    "uplink_message": {
+        "session_key_id": "AY+Lc/Bl3nDHQc27IhtDhA==",
+        "f_port": 2,
+        "f_cnt": 4,
+        "frm_payload": "BARTl6MC",
+        "rx_metadata": [
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-station-001",
+                    "eui": "7076FF00560723B7"
+                },
+                "time": "2024-05-18T11:27:16.590Z",
+                "timestamp": 1660970204,
+                "rssi": -91,
+                "channel_rssi": -91,
+                "snr": 7.5,
+                "location": {
+                    "latitude": 50.66705192,
+                    "longitude": 4.62103822,
+                    "source": "SOURCE_REGISTRY"
+                },
+                "uplink_token": "CiQKIgoWbGxuLXdpcm5ldC1zdGF0aW9uLTAwMRIIcHb/AFYHI7cQ3MmBmAYaDAiUoaKyBhDX2r2jAiDg9qfMq74lKgwIlKGisgYQgN+qmQI=",
+                "channel_index": 7,
+                "gps_time": "2024-05-18T11:27:16.590Z",
+                "received_at": "2024-05-18T11:27:16.228817275Z"
+            },
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-istation-005",
+                    "eui": "7076FF00560509D9"
+                },
+                "time": "2024-05-18T11:27:16.590Z",
+                "timestamp": 2526120772,
+                "rssi": -97,
+                "channel_rssi": -97,
+                "snr": 7,
+                "uplink_token": "CiUKIwoXbGxuLXdpcm5ldC1pc3RhdGlvbi0wMDUSCHB2/wBWBQnZEMSWxrQJGgwIlKGisgYQooampAIgoIOgxMLXJSoMCJShorIGEIDfqpkC",
+                "channel_index": 7,
+                "gps_time": "2024-05-18T11:27:16.590Z",
+                "received_at": "2024-05-18T11:27:14.335841224Z"
+            },
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-station-002",
+                    "eui": "7076FF00560723E7"
+                },
+                "time": "2024-05-18T11:27:16.590Z",
+                "timestamp": 2589060364,
+                "rssi": -115,
+                "channel_rssi": -115,
+                "snr": -7.8,
+                "uplink_token": "CiQKIgoWbGxuLXdpcm5ldC1zdGF0aW9uLTAwMhIIcHb/AFYHI+cQjNrH0gkaDAiUoaKyBhDnqPOkAiDg7ZeArdklKgwIlKGisgYQgN+qmQI=",
+                "channel_index": 7,
+                "gps_time": "2024-05-18T11:27:16.590Z",
+                "received_at": "2024-05-18T11:27:14.336095198Z"
+            },
+            {
+                "gateway_ids": {
+                    "gateway_id": "lln-wirnet-istation-004",
+                    "eui": "7076FF0056050CFB"
+                },
+                "time": "2024-05-18T11:27:16.590Z",
+                "timestamp": 2096467460,
+                "rssi": -116,
+                "channel_rssi": -116,
+                "snr": -4.8,
+                "uplink_token": "CiUKIwoXbGxuLXdpcm5ldC1pc3RhdGlvbi0wMDQSCHB2/wBWBQz7EISc1ucHGgwIlKGisgYQ1p7VpQIgoP/K+YHLJSoMCJShorIGEIDfqpkC",
+                "channel_index": 7,
+                "gps_time": "2024-05-18T11:27:16.590Z",
+                "received_at": "2024-05-18T11:27:14.337464415Z"
+            }
+        ],
+        "settings": {
+            "data_rate": {
+                "lora": {
+                    "bandwidth": 125000,
+                    "spreading_factor": 7,
+                    "coding_rate": "4/5"
+                }
+            },
+            "frequency": "868500000",
+            "timestamp": 1660970204,
+            "time": "2024-05-18T11:27:16.590Z"
+        },
+        "received_at": "2024-05-18T11:27:16.613244411Z",
+        "confirmed": true,
+        "consumed_airtime": "0.051456s",
+        "locations": {
+            "user": {
+                "latitude": 50.669282253947635,
+                "longitude": 4.609887822765963,
+                "source": "SOURCE_REGISTRY"
+            }
+        },
+        "version_ids": {
+            "brand_id": "heltec",
+            "model_id": "wifi-lora-32-class-a-otaa",
+            "hardware_version": "_unknown_hw_version_",
+            "firmware_version": "1.0",
+            "band_id": "EU_863_870"
+        },
+        "network_ids": {
+            "net_id": "000013",
+            "ns_id": "EC656E0000000181",
+            "tenant_id": "ttn",
+            "cluster_id": "eu1",
+            "cluster_address": "eu1.cloud.thethings.network"
+        }
+    }
+}
