@@ -22,7 +22,7 @@ def get_all_csv_files(directory):
     return files
 
 
-def draw_each_csv_file(file_path, voltage=5, interval=200):
+def draw_each_csv_file(file_path, voltage=5, interval=25):
     data = pd.read_csv(file_path)
     title = file_path.split('/')[-1].split('.')[0]
     data['Power (W)'] = data['Reading'] * voltage
@@ -32,10 +32,11 @@ def draw_each_csv_file(file_path, voltage=5, interval=200):
 
     average_power = data['Power (W)'].mean()
     print(f'Average Power Consumption: {average_power} W')
-    plt.figure(figsize=(100, 50))
+    plt.figure(figsize=(50, 25))
     font_size = 100
-    plt.plot(average_power_data.index * 0.2, average_power_data['Power (W)'],
-             marker='o', linestyle='-', color='b', markersize=10, linewidth=2, label='Power (W)')
+    a = 0.025
+    plt.plot(average_power_data.index * a, average_power_data['Power (W)'],
+             marker='o', linestyle='-', color='b', markersize=1, linewidth=2, label='Power (W)')
     plt.title(f'{title} Operation Power Consumption', fontsize=font_size + 20, color='black', fontweight='bold')
     plt.xlabel('Interval', fontsize=font_size)
     plt.ylabel('Average Power (W)', fontsize=font_size)
@@ -47,9 +48,9 @@ def draw_each_csv_file(file_path, voltage=5, interval=200):
     max_index = average_power_data['Power (W)'].idxmax()
     min_index = average_power_data['Power (W)'].idxmin()
 
-    plt.text(max_index * 0.2, max_value, f'{max_value:.2f}', fontsize=font_size,
+    plt.text(max_index * a, max_value, f'{max_value:.2f}', fontsize=font_size/2,
              ha='right', va='bottom', color='red')
-    plt.text(min_index * 0.2, min_value, f'{min_value:.2f}', fontsize=font_size,
+    plt.text(min_index * a, min_value, f'{min_value:.2f}', fontsize=font_size/2,
              ha='right', va='bottom', color='green')
 
     plt.xticks(fontsize=font_size - 20)

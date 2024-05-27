@@ -78,7 +78,7 @@ def calculate_distance(lat1: float, lon1: float, lat2: float, lon2: float):
 
 def main():
     data = read_gps_data("../data/gps/measure.csv")
-    # plot_gps_data(data)
+    plot_gps_data(data)
     print_distance(data)
 
 
