@@ -33,12 +33,20 @@ def calculate_power_consumption():
     normal = calculate_normal()
     return gps + lock + normal
 
+def get_milliampere():
+    """
+    the return value of calculate_power_consumption is in watts(P = UI)
+    our battery is 5 volts, so we need to divide the power by 5 to get the current in amperes
+    then we still need to divide it by 1000 to get the current in milli amperes
+    :return: milliampere * 24 hours
+    """
+    return calculate_power_consumption() / 5 * 1000
 
 def main():
-    capacity = 2.29
-    power_consumption = calculate_power_consumption() / 24
+    capacity = 620
+    power_consumption = get_milliampere()
     days = capacity / power_consumption
-    print(f"Power Consumption: {power_consumption:.2f} Wh")
+    print(f"Power Consumption: {power_consumption:.2f} Wh / day")
     print(f"Days: {days:.2f}")
 
 
