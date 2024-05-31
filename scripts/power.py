@@ -37,9 +37,9 @@ def draw_each_csv_file(file_path, voltage=5, interval=25):
     a = 0.025
     plt.plot(average_power_data.index * a, average_power_data['Power (W)'],
              marker='o', linestyle='-', color='b', markersize=1, linewidth=2, label='Power (W)')
-    plt.title(f'{title} Operation Power Consumption', fontsize=font_size + 20, color='black', fontweight='bold')
-    plt.xlabel('Interval', fontsize=font_size)
-    plt.ylabel('Average Power (W)', fontsize=font_size)
+    # plt.title(f'{title} Operation Power Consumption', fontsize=font_size + 20, color='black', fontweight='bold')
+    plt.xlabel('Time (s)', fontsize=font_size)
+    plt.ylabel('Power (W)', fontsize=font_size)
     plt.grid(True)
     # Annotate only the max and min data points
     max_value = average_power_data['Power (W)'].max()

@@ -31,8 +31,9 @@ def get_data_list(metadata: dict, data_type: str):
 def get_max_data(data: dict, data_type):
     rssi_list = get_data_list(data, data_type)
     # max based on the absolute value
-    max_rssi = max(rssi_list, key=abs)
-    return abs(max_rssi)
+    max_rssi = max(rssi_list)
+    # print(max_rssi)
+    return max_rssi
 
 
 def get_average_data(max_rssis: list):
@@ -98,7 +99,7 @@ def plot_graph(data):
     axs[0].bar(data['locationAbbreviation'], data['rssis'], color='b')
     axs[0].set_title('RSSI', fontsize=font_size + 20)
     axs[0].set_xlabel('Locations', fontsize=font_size)
-    axs[0].set_ylabel('RSSI', fontsize=font_size)
+    axs[0].set_ylabel('RSSI (dBm)', fontsize=font_size)
     axs[0].tick_params(axis='x', labelsize=font_size - 20)
     axs[0].tick_params(axis='y', labelsize=font_size - 20)
 
@@ -106,7 +107,7 @@ def plot_graph(data):
     axs[1].bar(data['locationAbbreviation'], data['snrs'], color='r')
     axs[1].set_title('SNR', fontsize=font_size + 20)
     axs[1].set_xlabel('Locations', fontsize=font_size)
-    axs[1].set_ylabel('SNR', fontsize=font_size)
+    axs[1].set_ylabel('SNR (dB)', fontsize=font_size)
     axs[1].tick_params(axis='x', labelsize=font_size - 20)
     axs[1].tick_params(axis='y', labelsize=font_size - 20)
 
