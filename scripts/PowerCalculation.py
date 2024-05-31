@@ -1,3 +1,9 @@
+"""We assume the GPS module's usage frequency is once every minutes and with a short burst time which is 20 seconds.
+We also assume the lock and unlock are operated 3 times each day with a short burst time of 6 seconds. The operation
+of locking and unlocking need NFC, Servo and Lora module. All the other times, the lock stays in normal situation.
+
+"""
+
 power_consumption = {
     "Normal": 0.6825457698899189,
     "Servo": 0.6866665719827936,
