@@ -35,8 +35,9 @@ def calculate_normal():
 
 def calculate_power_consumption():
     gps = calculate_gps()
-    lock = calculate_lock()
-    normal = calculate_normal()
+    # lock = calculate_lock()
+    lock = 0
+    normal = 0
     return gps + lock + normal
 
 def get_milliampere():
@@ -52,7 +53,7 @@ def main():
     capacity = 620
     power_consumption = get_milliampere()
     days = capacity / power_consumption
-    print(f"Power Consumption: {power_consumption:.2f} Wh / day")
+    print(f"Power Consumption: {power_consumption:.2f} ma / day")
     print(f"Days: {days:.2f}")
 
 
