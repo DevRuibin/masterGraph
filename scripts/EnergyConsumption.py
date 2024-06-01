@@ -38,10 +38,10 @@ def low_demand():
     print("Low Demand")
     total = 3600
     lock = 5.44
-    lock_time = 1
-    gps_time = 1
+    lock_time = 0
+    gps_time = 0
     normal = (total - lock * lock_time) * 0.6
-    energy = normal * 0.6 + 3.9228 * lock_time + 13.5396 * gps_time
+    energy = normal + 3.9228 * lock_time + 13.5396 * gps_time
     cap = 2.29 * 3600
     print("Energy", energy)
     print(cap / energy)
@@ -58,9 +58,9 @@ def high_demand():
     total = 3600
     lock = 5.44
     lock_time = 10
-    gps_time = 4
+    gps_time = 12
     normal = (total - lock * lock_time) * 0.6
-    energy = normal * 0.6 + 3.9228 * lock_time + 13.5396 * gps_time
+    energy = normal + 3.9228 * lock_time + 13.5396 * gps_time
     cap = 2.29 * 3600
     print("Energy", energy)
     print(cap / energy)
